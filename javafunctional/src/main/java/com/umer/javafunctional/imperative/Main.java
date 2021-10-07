@@ -1,7 +1,10 @@
 package com.umer.javafunctional.imperative;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+import java.util.stream.Collectors;
+
 import static com.umer.javafunctional.imperative.Main.Gender.*;
 
 public class Main {
@@ -14,7 +17,7 @@ public class Main {
 				new Person("Alice", FEMALE)
 			);
 
-		// Imperative approach
+		System.out.println("// Imperative approach");
 		List<Person> females = new ArrayList<Main.Person>();
 		for (Person person : people) {
 			if (FEMALE.equals(person.gender)) {
@@ -25,6 +28,13 @@ public class Main {
 		for (Person female: females) {
 			System.out.println(female);
 		}
+		
+		System.out.println("// Declarative approach");
+		people.stream()
+				.filter(person ->FEMALE.equals(person.gender))
+				//.collect(Collectors.toList())
+				.forEach(System.out:: println);
+		
 
 	}
 
