@@ -7,3 +7,5 @@
 - A stream allows us to get in an abstract mode where we simple tell it what we want.
 
 
+- [Tutorial video](https://www.youtube.com/watch?v=rPSL1alFIjI): Video
+- Timestamp: 18:55
