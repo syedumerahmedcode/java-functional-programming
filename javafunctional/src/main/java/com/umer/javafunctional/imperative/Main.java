@@ -1,5 +1,6 @@
 package com.umer.javafunctional.imperative;
 
+import java.util.ArrayList;
 import java.util.List;
 import static com.umer.javafunctional.imperative.Main.Gender.*;
 
@@ -12,6 +13,19 @@ public class Main {
 				new Person("Alex", MALE), 
 				new Person("Alice", FEMALE)
 			);
+
+		// Imperative approach
+		List<Person> females = new ArrayList<Main.Person>();
+		for (Person person : people) {
+			if (FEMALE.equals(person.gender)) {
+				females.add(person);
+			}
+		}
+		
+		for (Person female: females) {
+			System.out.println(female);
+		}
+
 	}
 
 	static class Person {
