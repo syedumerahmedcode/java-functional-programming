@@ -1,4 +1,4 @@
-package com.umer.javafunctional;
+package com.umer.javafunctional.imperative;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
