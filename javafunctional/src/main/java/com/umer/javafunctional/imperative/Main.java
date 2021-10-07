@@ -1,11 +1,10 @@
 package com.umer.javafunctional.imperative;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.stream.Collectors;
+import static com.umer.javafunctional.imperative.Main.Gender.FEMALE;
+import static com.umer.javafunctional.imperative.Main.Gender.MALE;
 
-import static com.umer.javafunctional.imperative.Main.Gender.*;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 	public static void main(String[] args) {
@@ -24,17 +23,15 @@ public class Main {
 				females.add(person);
 			}
 		}
-		
-		for (Person female: females) {
+
+		for (Person female : females) {
 			System.out.println(female);
 		}
-		
+
 		System.out.println("// Declarative approach");
-		people.stream()
-				.filter(person ->FEMALE.equals(person.gender))
-				//.collect(Collectors.toList())
-				.forEach(System.out:: println);
-		
+		people.stream().filter(person -> FEMALE.equals(person.gender))
+				// .collect(Collectors.toList())
+				.forEach(System.out::println);
 
 	}
 
