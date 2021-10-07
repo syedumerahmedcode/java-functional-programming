@@ -8,4 +8,5 @@
 
 
 - [Tutorial video](https://www.youtube.com/watch?v=rPSL1alFIjI): Video
-- Timestamp: 18:55
+- Timestamp: 19:11
+- Package java.util.Function javadoc 
