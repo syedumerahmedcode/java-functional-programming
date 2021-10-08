@@ -5,6 +5,7 @@ import static com.umer.javafunctional.imperative.Main.Gender.MALE;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class Main {
 	public static void main(String[] args) {
@@ -29,7 +30,8 @@ public class Main {
 		}
 
 		System.out.println("// Declarative approach");
-		people.stream().filter(person -> FEMALE.equals(person.gender))
+		final Predicate<? super Person> predicate = person -> FEMALE.equals(person.gender);
+		people.stream().filter(predicate/*person -> FEMALE.equals(person.gender)*/)
 				// .collect(Collectors.toList())
 				.forEach(System.out::println);
 
