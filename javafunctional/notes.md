@@ -6,6 +6,23 @@
 
 - A stream allows us to get in an abstract mode where we simple tell it what we want.
 
+- Examples of functional programming:
+
+// Assignment context
+     Predicate<String> p = String::isEmpty;
+     Here we specify the predicate as an empty strinng .
+     Similar to String p="";
+
+// Method invocation context
+     stream.filter(e -> e.getSize() > 10)...
+     Here e--> is the return type 
+     e.size()>10 is the logic of the method
+     
+
+// Cast context
+     stream.map((ToIntFunction) e -> e.getSize())...
+     Here,  (ToIntFunction) is used to transform the return type to Integer.
+
 # references:
 - [1](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html#package.description): Java functional package **(JavaDoc)**
 - [2](https://www.youtube.com/watch?v=rPSL1alFIjI): Functional Programming in Java - Full Course
