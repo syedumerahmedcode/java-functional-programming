@@ -18,14 +18,13 @@ public class _Function {
 
 		final Function<Integer, Integer> incrementByOneAndMultiplyByTen = 
 				incrementByOneFunction.andThen(multiplyByTen);
-		
+
 		final Integer result3 = incrementByOneAndMultiplyByTen.apply(1);
 		System.out.println("incrementByOneAndMultiplyByTen using declarative approach: " + result3);
-		
+
 		// BiFunction takes 2 argument and produces 1 result.
 		final Integer result4 = incrementByOneAndMultiplyBiFunction.apply(4, 100);
 		System.out.println("incrementByOneAndMultiplyBiFunction using declarative approach: " + result4);
-		
 
 	}
 
@@ -38,12 +37,11 @@ public class _Function {
 	static int incrementByOneFunction(int number) {
 		return number + 1;
 	}
-	
+
 	// declarative approach
-	static BiFunction<Integer, Integer, Integer> incrementByOneAndMultiplyBiFunction=
-			(numberToIncrement, numToMultiplyBy) -> (numberToIncrement + 1) * numToMultiplyBy; 
-	
-	
+	static BiFunction<Integer, Integer, Integer> incrementByOneAndMultiplyBiFunction = 
+			(numberToIncrement, numToMultiplyBy) -> (numberToIncrement + 1) * numToMultiplyBy;
+
 	// imperative approach
 	static int incrementByOneAndMultiply(int number, int numToMultiplyBy) {
 		return ((number + 1) * numToMultiplyBy);
