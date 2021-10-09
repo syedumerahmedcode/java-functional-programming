@@ -6,18 +6,18 @@ public class _Function {
 
 	public static void main(String[] args) {
 		int result = incrementByOneFunction(1);
-		System.out.println(result);
+		System.out.println("incrementByOneFunction using imperative approach: "+result);
 
 		int result2 = incrementByOneFunction.apply(1);
-		System.out.println(result2);
+		System.out.println("incrementByOneFunction using declarative approach: "+result2);
 		
 		int multiply = multiplyByTen.apply(result2);
-		System.out.println(multiply);
+		System.out.println("multiplyByTen using declarative approach: "+multiply);
 		
 		final Function<Integer, Integer> incrementByOneAndMultiplyByTen = 
 				incrementByOneFunction.andThen(multiplyByTen);
 		final Integer result3 = incrementByOneAndMultiplyByTen.apply(1);
-		System.out.println(result3);
+		System.out.println("incrementByOneAndMultiplyByTen using declarative approach: "+result3);
 		
 	}
 
