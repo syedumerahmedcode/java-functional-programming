@@ -10,10 +10,16 @@ public class _Function {
 
 		int result2 = incrementByOneFunction.apply(1);
 		System.out.println(result2);
+		
+		int multiply = multiplyByTen.apply(result2);
+		System.out.println(multiply);
+		
 	}
 
 	// declarative approach
 	static Function<Integer, Integer> incrementByOneFunction = number -> number + 1;
+
+	static Function<Integer, Integer> multiplyByTen = number -> number * 10;
 
 	// imperative approach
 	static int incrementByOneFunction(int number) {
