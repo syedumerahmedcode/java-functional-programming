@@ -14,6 +14,11 @@ public class _Function {
 		int multiply = multiplyByTen.apply(result2);
 		System.out.println(multiply);
 		
+		final Function<Integer, Integer> incrementByOneAndMultiplyByTen = 
+				incrementByOneFunction.andThen(multiplyByTen);
+		final Integer result3 = incrementByOneAndMultiplyByTen.apply(1);
+		System.out.println(result3);
+		
 	}
 
 	// declarative approach
