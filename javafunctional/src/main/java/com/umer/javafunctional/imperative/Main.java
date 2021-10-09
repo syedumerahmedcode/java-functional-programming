@@ -30,7 +30,9 @@ public class Main {
 		}
 
 		System.out.println("// Declarative approach");
+		
 		final Predicate<? super Person> predicate = person -> FEMALE.equals(person.gender);
+		
 		people.stream().filter(predicate/*person -> FEMALE.equals(person.gender)*/)
 				// .collect(Collectors.toList())
 				.forEach(System.out::println);
