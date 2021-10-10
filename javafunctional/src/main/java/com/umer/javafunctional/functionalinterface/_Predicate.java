@@ -1,5 +1,6 @@
 package com.umer.javafunctional.functionalinterface;
 
+import java.util.function.BiPredicate;
 import java.util.function.Predicate;
 
 public class _Predicate {
@@ -43,6 +44,14 @@ public class _Predicate {
 				.test(invalidPhoneNumberWhereLengthIsIncorrect)
 			);
 
+		System.out.println("-----------Using BiPredicates----------------");
+		System.out.println("Is first name Maria and last name Smith  = " + 
+				firstNameMariaAndLastNameSmithBiPredicate.test("maria", "smith")
+		);
+		System.out.println("Is first name Maria and last name Smith  = " + 
+				firstNameMariaAndLastNameSmithBiPredicate.test("john", "smith")
+		);
+
 	}
 
 	// Declarative approach
@@ -52,6 +61,9 @@ public class _Predicate {
 				
 	static Predicate<String> conatinsNumberThreePredicate=phoneNumber ->
 				phoneNumber.contains("3");
+				
+	static BiPredicate<String, String>	firstNameMariaAndLastNameSmithBiPredicate= (firstName, lastname) ->
+				firstName.equalsIgnoreCase("Maria") && lastname.equalsIgnoreCase("Smith");
 
 	// Imperative approach
 	static boolean isPhoneNumberValid(String phoneNumber) {

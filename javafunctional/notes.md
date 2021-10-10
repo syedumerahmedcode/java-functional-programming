@@ -29,10 +29,11 @@ Some methods used in the project:
 - **BiFunction<T,U,R>**: Represents a function that accepts two arguments and produces a result.
 - **Consumer<T>**: Represents an operation that accepts a single input argument and returns no result. It is similar to a void function when compared to imperative implementation.
 - **BiConsumer<T,U>**: Represents an operation that accepts two input arguments and returns no result.
-- **Predicate<T>**: Represents a predicate(boolean-valued function) of one argument. 
+- **Predicate<T>**: Represents a predicate(boolean-valued function) of one argument.
+- **BiPredicate<T,U>**: Represents a predicate (boolean-valued function) of two arguments.  
 
 # references:
 - [1](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html#package.description): Java functional package **(JavaDoc)**
 - [2](https://www.youtube.com/watch?v=rPSL1alFIjI): Functional Programming in Java - Full Course
-- Timestamp: 51:49
+- Timestamp: 01:01:46
 
