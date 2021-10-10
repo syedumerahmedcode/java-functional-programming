@@ -1,6 +1,8 @@
 package com.umer.javafunctional.functionalinterface;
 
+import java.util.function.BiConsumer;
 import java.util.function.Consumer;
+
 
 public class _Consumer {
 	
@@ -11,6 +13,7 @@ public class _Consumer {
 		
 		// Consumer Functional interface
 		greetCustomerConsumer.accept(maria);
+		greetCustomerConsumerV2.accept(maria, false);
 		
 	}
 	
@@ -19,6 +22,11 @@ public class _Consumer {
 				"Hello " + customer.customerName 
 				+ ", thanks for registering phone number "
 				+ customer.customerPhoneNumber);
+	
+	static BiConsumer<Customer, Boolean> greetCustomerConsumerV2=(customer, showPhoneNumber) -> System.out.println(
+				"Hello " + customer.customerName 
+				+ ", thanks for registering phone number "
+				+ (showPhoneNumber ? customer.customerPhoneNumber: "********"));
 	
 	// Imperative approach 
 	static void greetCustomer(Customer customer) {
