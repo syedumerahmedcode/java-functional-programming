@@ -22,6 +22,12 @@
 // Cast context
      stream.map((ToIntFunction) e -> e.getSize())...
      Here,  (ToIntFunction) is used to transform the return type to Integer.
+     
+Some methods used in the project:
+     
+- **Function<T,R>: **Represents a function that accepts one argument and produces a result.
+- **BiFunction<T,U,R>: **Represents a function that accepts two arguments and produces a result.
+- **Consumer<T>: **Represents an operation that accepts a single input argument and returns no result.
 
 # references:
 - [1](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html#package.description): Java functional package **(JavaDoc)**
