@@ -10,6 +10,7 @@ public class _Consumer {
 		// Normal java function
 		final Customer maria = new Customer("Maria", "99999");
 		greetCustomer(maria);
+		greetCustomerV2(maria, false);
 		
 		// Consumer Functional interface
 		greetCustomerConsumer.accept(maria);
@@ -33,6 +34,12 @@ public class _Consumer {
 		System.out.println("Hello " + customer.customerName 
 				+ ", thanks for registering phone number "
 				+ customer.customerPhoneNumber);
+	}
+	
+	static void greetCustomerV2(Customer customer, Boolean showPhoneNumber) {
+		System.out.println("Hello " + customer.customerName 
+				+ ", thanks for registering phone number "
+				+ (showPhoneNumber ? customer.customerPhoneNumber: "********"));
 	}
 	
 	static class Customer{
