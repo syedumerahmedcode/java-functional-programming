@@ -3,9 +3,8 @@
 ## Table of content
 - [Introduction](#introduction)
 - [Out Of Scope](#out-of-scope)
-- [Explanation DAO Pattern](#explanation-dao-pattern)
-- [Explanation Database](#explanation-database)
-- [Explanation System Design](#explanation-system-design)
+- [Explanation Declarative Approach](#explanation-declarative-approach)
+- [Explanation Functional Interface](#explanation-functional-interface)
 - [Explanation Other important Points](#explanation-other-important-points)
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
@@ -22,16 +21,12 @@
 
 - To be defined
 
-## Explanation DAO Pattern
+## Explanation Declarative Approach
 
 - To be defined
 
  
-## Explanation Database
-
-- To be defined
-
-## Explanation System Design
+## Explanation Functional Interface
 
 - To be defined
 
