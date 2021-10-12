@@ -35,5 +35,5 @@ Some methods used in the project:
 # references:
 - [1](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html#package.description): Java functional package **(JavaDoc)**
 - [2](https://www.youtube.com/watch?v=rPSL1alFIjI): Functional Programming in Java - Full Course
-- Timestamp: 01:01:46
+- Timestamp: 01:07:08
 
