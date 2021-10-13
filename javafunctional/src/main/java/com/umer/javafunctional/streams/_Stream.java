@@ -14,13 +14,14 @@ public class _Stream {
 				new Person("Maria", Gender.FEMALE),
 				new Person("Aisha", Gender.FEMALE), 
 				new Person("Alex", Gender.MALE), 
-				new Person("Alice", Gender.FEMALE)
+				new Person("Alice", Gender.FEMALE),
+				new Person("Bob", Gender.PREFER_NOT_TO_SAY)
 			);
 		
 		people.stream()
-				.map(person -> person.gender)
-				.collect(Collectors.toSet())
-				.forEach(gender -> System.out.println(gender));
+				.map(person -> person.gender)// Converting the Person just to their gender
+				.collect(Collectors.toSet())// Removing duplicates
+				.forEach(gender -> System.out.println(gender));// printing the list of gender in the set
 		
 	}
 	
@@ -42,7 +43,7 @@ public class _Stream {
 	}
 
 	enum Gender {
-		MALE, FEMALE;
+		MALE, FEMALE, PREFER_NOT_TO_SAY;
 	}
 
 }
