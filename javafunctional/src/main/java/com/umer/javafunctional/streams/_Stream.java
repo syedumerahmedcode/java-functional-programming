@@ -2,6 +2,8 @@ package com.umer.javafunctional.streams;
 
 
 import java.util.List;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 
 public class _Stream {
@@ -14,6 +16,11 @@ public class _Stream {
 				new Person("Alex", Gender.MALE), 
 				new Person("Alice", Gender.FEMALE)
 			);
+		
+		people.stream()
+				.map(person -> person.gender)
+				.collect(Collectors.toSet())
+				.forEach(gender -> System.out.println(gender));
 		
 	}
 	

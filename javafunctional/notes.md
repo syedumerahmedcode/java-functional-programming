@@ -31,7 +31,12 @@ Some methods used in the project:
 - **BiConsumer<T,U>**: Represents an operation that accepts two input arguments and returns no result.
 - **Predicate<T>**: Represents a predicate(boolean-valued function) of one argument.
 - **BiPredicate<T,U>**: Represents a predicate (boolean-valued function) of two arguments.
-- **Supplier<T>**: Represents a supplier of results.  
+- **Supplier<T>**: Represents a supplier of results.
+
+These are coming from Stream API.
+- **map()**: Used for the transformation of an object.  It returns a stream consisting of the results of applying the given function to the elements of this stream. What is returned depends on how the function is implemented inside map method.
+- **collect()**: Performs some kind of reduction operation on the elements of the stream. In our case, we are using Collector API from Stream.  
+- **forEach()**: Performs an action for each element of this stream. 
 
 # references:
 - [1](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html#package.description): Java functional package **(JavaDoc)**
