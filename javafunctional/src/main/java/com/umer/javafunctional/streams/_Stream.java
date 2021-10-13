@@ -32,18 +32,18 @@ public class _Stream {
 		System.out.println("--------------------------------------");
 		
 		people.stream()
-		.map(person -> person.name)
-		.collect(Collectors.toSet())
-		.forEach(name -> System.out.println(name));
+				.map(person -> person.name)
+				.collect(Collectors.toSet())
+				.forEach(name -> System.out.println(name));
 		
 		System.out.println("--------------------------------------");
 		System.out.println("Displaying length of each name in order of the input people list");
 		System.out.println("--------------------------------------");
 		
 		people.stream()
-		.map(person -> person.name)
-		.mapToInt(name -> name.length())		
-		.forEach(length -> System.out.println(length));
+				.map(person -> person.name)
+				.mapToInt(name -> name.length())		
+				.forEach(length -> System.out.println(length));
 		
 	}
 	
