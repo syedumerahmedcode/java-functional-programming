@@ -18,10 +18,23 @@ public class _Stream {
 				new Person("Bob", Gender.PREFER_NOT_TO_SAY)
 			);
 		
+		System.out.println("--------------------------------------");
+		System.out.println("Displaying gender of people");
+		System.out.println("--------------------------------------");
+		
 		people.stream()
 				.map(person -> person.gender)// Converting the Person just to their gender
 				.collect(Collectors.toSet())// Removing duplicates
 				.forEach(gender -> System.out.println(gender));// printing the list of gender in the set
+		
+		System.out.println("--------------------------------------");
+		System.out.println("Displaying names of people");
+		System.out.println("--------------------------------------");
+		
+		people.stream()
+		.map(person -> person.name)
+		.collect(Collectors.toSet())
+		.forEach(gender -> System.out.println(gender));
 		
 	}
 	
