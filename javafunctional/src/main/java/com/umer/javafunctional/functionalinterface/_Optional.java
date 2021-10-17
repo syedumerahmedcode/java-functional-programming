@@ -23,6 +23,28 @@ public class _Optional {
 		System.out.println(hello);
 		System.out.println(hello.isPresent());
 		System.out.println(hello.isEmpty());
+		
+		System.out.println("---------------------------------------------------------------");
+		System.out.println("Use case of optional.orElse");
+		System.out.println("---------------------------------------------------------------");
+		
+		final Optional<String> hello2 = Optional.ofNullable(null);
+		System.out.println(hello2.isPresent());
+		System.out.println(hello2.isEmpty());
+		final String world = hello2.orElse("World");
+		System.out.println(world);
+		
+		System.out.println("++++++++++++++++");
+		
+		final Optional<String> hello3 = Optional.ofNullable("hello");
+		System.out.println(hello3.isPresent());
+		System.out.println(hello3.isEmpty());
+		final String orElse = hello3
+				.map(statement -> statement.toUpperCase())
+				//.map(String::toUpperCase)---> Another way of writing map(statement -> statement.toUpperCase()) 
+				.orElse("World");
+		System.out.println(orElse);
+		
 
 	}
 }
