@@ -66,6 +66,13 @@ public class _Stream {
 				.anyMatch(predicate);
 		System.out.println("Does people list contains any females: "+containsAnyFemales);
 		
+		final Predicate<? super Person> PreferNotToSayPredicate = person -> Gender.PREFER_NOT_TO_SAY.equals(person.gender);
+		
+		final boolean containsAnyoneWhoseGenderIsNotKnown = people.stream()
+				.noneMatch(PreferNotToSayPredicate);
+		System.out.println("Does people list contains all, whos gender is specified as male or female: "+containsAnyoneWhoseGenderIsNotKnown);
+		
+		
 		
 		
 				

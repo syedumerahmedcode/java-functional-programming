@@ -37,6 +37,9 @@ These are coming from Stream API.
 - **map()**: Used for the transformation of an object.  It returns a stream consisting of the results of applying the given function to the elements of this stream. What is returned depends on how the function is implemented inside map method.
 - **collect()**: Performs some kind of reduction operation on the elements of the stream. In our case, we are using Collector API from Stream.  
 - **forEach()**: Performs an action for each element of this stream. 
+- **noneMatch()**: Returns whether no elements of this stream match the provided predicate. May not evaluate the predicate on all elements if not necessary for determining the result. If the stream is empty then true is returned and the predicate is not evaluated. 
+- **allMatch()**: Returns whether all elements of this stream match the provided predicate. May not evaluate the predicate on all elements if not necessary for determining the result. If the stream is empty then true is returned and the predicate is not evaluated. 
+- **anyMatch()**: Returns whether any elements of this stream match the provided predicate. May not evaluate the predicate on all elements if not necessary for determining the result. If the stream is empty then false is returned and the predicate is not evaluated. 
 
 # references:
 - [1](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html#package.description): Java functional package **(JavaDoc)**
