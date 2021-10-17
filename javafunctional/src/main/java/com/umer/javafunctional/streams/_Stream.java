@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.function.IntConsumer;
+import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 
 
@@ -43,10 +44,11 @@ public class _Stream {
 		System.out.println("--------------------------------------");
 		
 		final Function<? super Person, ? extends String> function = person -> person.name;
+		ToIntFunction<String> lengthOfName =name -> name.length();
 		final IntConsumer intConsumer = length -> System.out.println(length);
 		people.stream()
 				.map(function)
-				.mapToInt(name -> name.length())		
+				.mapToInt(lengthOfName)		
 				.forEach(intConsumer);
 		
 	}
