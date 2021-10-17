@@ -68,6 +68,52 @@ public class _Optional {
 			System.out.println(word);
 		}, () -> System.out.println("world"));
 		
+		
+		System.out.println("---------------------------------------------------------------");
+		System.out.println("How to handle optionalemail for a person");
+		System.out.println("---------------------------------------------------------------");
+		
+		Person jamesHasEmailAddress=new Person("James", "james@some_email.com");
+		final String emailOfJames = jamesHasEmailAddress
+				.getEmail()
+				.map(mapper ->mapper.toUpperCase())
+				.orElse(jamesHasEmailAddress.getName() + " provided no e-mail address");
+		System.out.println(emailOfJames
+				);
+		
+		System.out.println("++++++++++++++++");	
+		
+		Person aliceHasNoEmailAddress=new Person("Alice", null);
+		final String emailOfAlice = aliceHasNoEmailAddress
+				.getEmail()
+				.map(mapper ->mapper.toUpperCase())
+				.orElse(aliceHasNoEmailAddress.getName() + " provided no e-mail address");
+		System.out.println(emailOfAlice
+				);
 
 	}
+}
+
+class Person{
+	private final String name;
+	private final String email;
+	
+	public Person(String name, String email) {
+		super();
+		this.name = name;
+		this.email = email;
+	}
+
+	public String getName() {
+		return this.name;
+	}
+
+	public Optional<String> getEmail() {
+		return Optional.ofNullable(this.email);
+	}
+
+
+	
+	
+	
 }
