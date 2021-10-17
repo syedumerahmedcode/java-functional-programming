@@ -90,7 +90,23 @@ public class _Optional {
 				.orElse(aliceHasNoEmailAddress.getName() + " provided no e-mail address");
 		System.out.println(emailOfAlice
 				);
-
+		
+		System.out.println("++++++++++++++++");
+		System.out.println("++++++++++++++++");	
+		System.out.println("++++++++++++++++");	
+		if(jamesHasEmailAddress.getEmail().isPresent()) {
+			String email= jamesHasEmailAddress.getEmail().get();
+			System.out.println(email);
+		}else {
+			System.out.println("email not provided");
+		}
+		System.out.println("++++++++++++++++");	
+		if(aliceHasNoEmailAddress.getEmail().isPresent()) {
+			String email= aliceHasNoEmailAddress.getEmail().get();
+			System.out.println(email);
+		}else {
+			System.out.println("email not provided");
+		}
 	}
 }
 
