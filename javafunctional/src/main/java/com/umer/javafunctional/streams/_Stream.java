@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.function.IntConsumer;
+import java.util.function.Predicate;
 import java.util.function.ToIntFunction;
 import java.util.stream.Collectors;
 
@@ -50,6 +51,24 @@ public class _Stream {
 				.map(function)
 				.mapToInt(lengthOfName)		
 				.forEach(intConsumer);
+		
+		
+		System.out.println("--------------------------------------");
+		System.out.println("Displaying the availability of females from the list of people");
+		System.out.println("--------------------------------------");
+		
+		final Predicate<? super Person> predicate = person -> Gender.FEMALE.equals(person.gender);
+		final boolean containsOnlyFemales = people.stream()
+				.allMatch(predicate);
+		System.out.println("Does people list contains only females: "+containsOnlyFemales);
+		
+		final boolean containsAnyFemales = people.stream()
+				.anyMatch(predicate);
+		System.out.println("Does people list contains any females: "+containsAnyFemales);
+		
+		
+		
+				
 		
 	}
 	
