@@ -3,6 +3,8 @@ package com.umer.javafunctional.streams;
 
 import java.util.List;
 import java.util.Set;
+import java.util.function.Function;
+import java.util.function.IntConsumer;
 import java.util.stream.Collectors;
 
 
@@ -40,10 +42,12 @@ public class _Stream {
 		System.out.println("Displaying length of each name in order of the input people list");
 		System.out.println("--------------------------------------");
 		
+		final Function<? super Person, ? extends String> function = person -> person.name;
+		final IntConsumer intConsumer = length -> System.out.println(length);
 		people.stream()
-				.map(person -> person.name)
+				.map(function)
 				.mapToInt(name -> name.length())		
-				.forEach(length -> System.out.println(length));
+				.forEach(intConsumer);
 		
 	}
 	

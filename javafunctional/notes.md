@@ -40,7 +40,7 @@ These are coming from Stream API.
 
 # references:
 - [1](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html#package.description): Java functional package **(JavaDoc)**
-- [2](https://www.youtube.com/watch?v=rPSL1alFIjI): Functional Programming in Java - Full Course
-- [3](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html): Java Stream **(JavaDoc)**
+- [2](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html): Java Stream **(JavaDoc)**
+- [3](https://www.youtube.com/watch?v=rPSL1alFIjI): Functional Programming in Java - Full Course
 - Timestamp: 01:19:02
 
