@@ -44,6 +44,29 @@ public class _Optional {
 				//.map(String::toUpperCase)---> Another way of writing map(statement -> statement.toUpperCase()) 
 				.orElse("World");
 		System.out.println(orElse);
+		hello3.ifPresent(word ->{
+			System.out.println("orginal world without modification: "+word);
+		});
+		hello3.ifPresentOrElse(word ->{
+			System.out.println(word);
+		}, () -> System.out.println("world"));
+		
+		System.out.println("++++++++++++++++");	
+		
+		final Optional<String> hello4 = Optional.ofNullable(null);
+		System.out.println(hello4.isPresent());
+		System.out.println(hello4.isEmpty());
+		final String orElseGet = hello4
+				.map(statement -> statement.toUpperCase())
+				//.map(String::toUpperCase)---> Another way of writing map(statement -> statement.toUpperCase()) 
+				.orElseGet(()->{
+					//..the methods can contain some extra computation
+					return "world";
+				});
+		System.out.println(orElseGet);
+		hello4.ifPresentOrElse(word ->{
+			System.out.println(word);
+		}, () -> System.out.println("world"));
 		
 
 	}
