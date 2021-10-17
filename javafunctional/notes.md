@@ -46,4 +46,7 @@ These are coming from Stream API.
 - [2](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html): Java Stream **(JavaDoc)**
 - [3](https://www.youtube.com/watch?v=rPSL1alFIjI): Functional Programming in Java - Full Course
 - Timestamp: 01:19:02
+- [4](https://www.youtube.com/watch?v=1xCxoOuDZuU): Java Optionals | Crash Course
+- Timestamp: 06:40
+
 
