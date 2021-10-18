@@ -1,6 +1,7 @@
 package com.umer.javafunctional.functionalinterface;
 
 import java.util.Optional;
+import java.util.function.Supplier;
 
 public class _Optional {
 
@@ -73,14 +74,18 @@ public class _Optional {
 		System.out.println("---------------------------------------------------------------");
 
 		Person jamesHasEmailAddress = new Person("James", "james@some_email.com");
-		final String emailOfJames = jamesHasEmailAddress.getEmail().map(mapper -> mapper.toUpperCase())
+		final String emailOfJames = jamesHasEmailAddress
+				.getEmail()
+				.map(mapper -> mapper.toUpperCase())
 				.orElse(jamesHasEmailAddress.getName() + " provided no e-mail address");
 		System.out.println(emailOfJames);
 
 		System.out.println("++++++++++++++++");
 
 		Person aliceHasNoEmailAddress = new Person("Alice", null);
-		final String emailOfAlice = aliceHasNoEmailAddress.getEmail().map(mapper -> mapper.toUpperCase())
+		final String emailOfAlice = aliceHasNoEmailAddress
+				.getEmail()
+				.map(mapper -> mapper.toUpperCase())
 				.orElse(aliceHasNoEmailAddress.getName() + " provided no e-mail address");
 		System.out.println(emailOfAlice);
 
@@ -100,16 +105,23 @@ public class _Optional {
 		} else {
 			System.out.println("email not provided");
 		}
-		
-		
+
 		System.out.println("---------------------------------------------------------------");
 		System.out.println("More usage of predicate");
 		System.out.println("---------------------------------------------------------------");
-		
-		Object value=Optional.ofNullable(null)
-				.orElseGet(() -> "default value");
+
+		final Supplier<? extends IllegalStateException> illegalState = () -> new IllegalStateException("exception");
+		Object value = Optional
+				.ofNullable("Hello")
+				.orElseThrow(illegalState);
 		System.out.println(value);
-		
+
+		Optional.ofNullable("john@gmail.com")
+				.ifPresent(email -> {
+			// some logic
+			System.out.println("Sending e-mail to " + email);
+		});
+
 	}
 }
 
