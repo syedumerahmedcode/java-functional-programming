@@ -5,22 +5,28 @@ import java.time.Period;
 
 public class CustomerValidatorService {
 	
-	public boolean isEmailValid(String email) {
+	private boolean isEmailValid(String email) {
 		/*
 		 * A very simple validation as the purpose is to under combinator pattern 
 		 */
 		return email.contains("@");
 	}
 	
-	public boolean isPhoneNumberValid(String phoneNumber) {
+	private boolean isPhoneNumberValid(String phoneNumber) {
 		/*
 		 * A very simple validation as the purpose is to under combinator pattern 
 		 */
 		return phoneNumber.contains("+0");
 	}
 	
-	public boolean isAdult(LocalDate dateOfBirth) {
+	private boolean isAdult(LocalDate dateOfBirth) {
 		return Period.between(dateOfBirth, LocalDate.now()).getYears()>18;
+	}
+	
+	public boolean isCustomerValid(Customer customer) {
+		return isEmailValid(customer.getEmail()) &&
+				isPhoneNumberValid(customer.getPhoneNumber()) &&
+				isAdult(customer.getDateOfBirth());
 	}
 	
 
