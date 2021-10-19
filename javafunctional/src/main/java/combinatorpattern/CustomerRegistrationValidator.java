@@ -31,10 +31,24 @@ public interface CustomerRegistrationValidator extends Function<Customer, Valida
 				? ValidationResult.SUCCESS
 				: ValidationResult.IS_NOT_AN_ADULT;		
 	}
-	
+	/**
+	 * Using combinator pattern to chain multiple validations together.
+	 * @param other the other validation condition to check.
+	 * @return The CustomerRegistrationValidator object with the current state of the result.
+	 */
 	default CustomerRegistrationValidator and(CustomerRegistrationValidator other) {
 		return customer -> {
+			/**
+			 * This applies validation on customer object. 
+			 * apply() is a method of Function which this interface is extending.
+			 */
 			final ValidationResult result = this.apply(customer);
+			/**
+			 * Ternary operator to check if further validations are necessary.
+			 * Since the inner methods isAnAdult(), isEmailValid() and isPhoneNumberValid()
+			 * also return CustomerRegistrationValidator, this combinator pattern works 
+			 * without problems.
+			 */
 			return result.equals(ValidationResult.SUCCESS) ? other.apply(customer) : result;
 		};
 	}
