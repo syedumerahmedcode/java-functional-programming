@@ -32,7 +32,12 @@ public interface CustomerRegistrationValidator extends Function<Customer, Valida
 				: ValidationResult.IS_NOT_AN_ADULT;		
 	}
 	
-	
+	default CustomerRegistrationValidator and(CustomerRegistrationValidator other) {
+		return customer -> {
+			final ValidationResult result = this.apply(customer);
+			return result.equals(ValidationResult.SUCCESS) ? other.apply(customer) : result;
+		};
+	}
 	
 	
 	enum ValidationResult {
