@@ -16,7 +16,7 @@ public class CustomerValidatorService {
 		/*
 		 * A very simple validation as the purpose is to under combinator pattern 
 		 */
-		return phoneNumber.contains("+0");
+		return phoneNumber.startsWith("+0");
 	}
 	
 	private boolean isAdult(LocalDate dateOfBirth) {
