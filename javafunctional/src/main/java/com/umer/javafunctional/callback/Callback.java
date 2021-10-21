@@ -2,7 +2,7 @@ package com.umer.javafunctional.callback;
 
 import java.util.function.Consumer;
 
-public class Main {
+public class Callback {
 	private static final String EMPTY_STRING = "  ";
 	
 	public static void main(String[] args) {
