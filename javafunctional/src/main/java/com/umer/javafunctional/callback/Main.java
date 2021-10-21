@@ -19,18 +19,22 @@ public class Main {
 		System.out.println("------------------------------------------------------------");
 		System.out.println("Last name is null and Callback is processing this condition.");
 		System.out.println("------------------------------------------------------------");
-		hello("John", null, value ->{
-			System.out.println("No last name provided for "+value);
-		});
+		hello("John", 
+				null, 
+				value ->{
+					System.out.println("No last name provided for "+value);
+				});
 		System.out.println(EMPTY_STRING);
 		
 		System.out.println(EMPTY_STRING);
 		System.out.println("------------------------------------------------------------");
 		System.out.println("Last name is null and Callback With Runnable is processing this condition.");
 		System.out.println("------------------------------------------------------------");
-		helloWithRunnable("John", null, ()->{
-			System.out.println("No last name provided");
-		});
+		helloWithRunnable("John", 
+							null, 
+							()->{
+								System.out.println("No last name provided");
+							});
 		System.out.println(EMPTY_STRING);
 		
 	}
