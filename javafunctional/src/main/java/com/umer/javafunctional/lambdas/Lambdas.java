@@ -42,7 +42,7 @@ public class Lambdas {
 				throw new IllegalArgumentException("name cannot be blank");
 			}
 			
-			return "The name of the person is "+name.toUpperCase()+" and the age is "+age;
+			return "The name of the person is "+name.toUpperCase()+" and the age is "+age+ " years";
 		};
 		System.out.println(EMPTY_STRING);
 		System.out.println("------------------------------------------------------------");

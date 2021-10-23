@@ -44,6 +44,18 @@ These are coming from Stream API.
 **Combinator Pattern**: This pattern is very useful for doing validation as it helps increase as well as decrease the validation on an object within the business logic. It is implemented inside _combinatorpattern_ package within _CustomerRegistrationValidator_ interface which extends Function<Customer, ValidationResult> where _Customer_ is the business object on which validation is applied whereas _ValidationResult_ is an enum which indicates the possible outcomes of the validation. **TODO**: Write separate section on **CustomerRegistrationValidator** interface.
 The combinator pattern is used in the Main class inside combinatorpattern package.
 
+
+**Rules for functional programming**
+
+Pure functional programming has a set of rules that one must follow:
+
+- No state, meaning that the function must not depend on or change the state of a variable/object outside the boundary of the function.
+- Pure functions, meaning that the function should have everything encapsulated within it and it **should not** depend on something outside the boundary of the function, for example, some form of global state.
+- No side effects outside of the boundary of the function.
+- Higher order functions: A function is considered a higher order functions if one of the following two conditions is true.
+1) The function takes one or more functions as parameters. For example, Callback
+2) The function returns another function as result. For example, combinator pattern.
+
 # references:
 - [1](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html#package.description): Java functional package **(JavaDoc)**
 - [2](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html): Java Stream **(JavaDoc)**
