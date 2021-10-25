@@ -23,12 +23,13 @@ public class Sample {
 				.map(e -> e*2)
 				.reduce(0, Integer::sum));
 		
-		
+		TimeIt.code(()->
 		System.out.println("The end result with declarative approach plus call of method is: "+
 				numbers.stream()
 				.filter(e -> e%2==0)
 				.mapToInt(e -> Sample.compute(e))
-				.sum());
+				.sum())
+		);
 		
 		
 	}
