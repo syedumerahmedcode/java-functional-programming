@@ -31,11 +31,24 @@ public class Sample {
 				.sum())
 		);
 		
+		TimeIt.code(()->
+		System.out.println("The end result with declarative approach WITH PARALLEL STREAM plus call of method is: "+
+				numbers.parallelStream()
+				.filter(e -> e%2==0)
+				.mapToInt(e -> Sample.compute(e))
+				.sum())
+		);
+		
 		
 	}
 	
 	public static int compute(int number) {
 		// assume this is a time intensive operation
+		try {
+			Thread.sleep(1000);
+		}catch(Exception ex) {
+			// skipped as we are not doing anything and keeping the example simple.
+		}
 		return number *2;
 		
 	}
