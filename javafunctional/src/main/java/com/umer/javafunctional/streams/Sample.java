@@ -24,6 +24,19 @@ public class Sample {
 				.reduce(0, Integer::sum));
 		
 		
+		System.out.println("The end result with declarative approach plus call of method is: "+
+				numbers.stream()
+				.filter(e -> e%2==0)
+				.mapToInt(e -> Sample.compute(e))
+				.sum());
+		
+		
+	}
+	
+	public static int compute(int number) {
+		// assume this is a time intensive operation
+		return number *2;
+		
 	}
 
 }
