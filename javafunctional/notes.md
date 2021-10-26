@@ -48,7 +48,26 @@ The combinator pattern is used in the Main class inside combinatorpattern packag
 **filter()**: Like the names suggests, this is only used for filtering. This is a replacement of if statement from imperative programming. Parameter: Stream<T> takes Predicate<T>.
 **map()**: Map is a transforming function i.e. it transforms values. Here, number of output == number of input. Please note that there is no guarantee on the type of the output with respect to the type of the input. Parameter: Stream<T> map takes Function<T,R> to return Stream<R>.
 
-Both filter and map stay within their swim lanes i.e. They are only concerned with the value at hand and are not considering any values before or after the value in question for their operation. 
+Both filter and map stay within their swim lanes i.e. They are only concerned with the value at hand and are not considering any values before or after the value in question for their operation.
+
+**reduce()**: reduce cuts across swim lanes. For example, it can be use to do summation of number or in other words, any operation which is concerned with the previous or the next value compared to the value currently under progress. Another example, accumulation of a series of numbers or products of all numbers in a series.
+
+Consider the following diagram:
+
+		filter			map			reduce
+									0.0
+									 \
+x1		  |							  \
+----------------------------		   \
+x2		  ->			x2'		->		+
+----------------------------			 \
+x3		  |								  \
+----------------------------			   \
+x4 		  ->			x4'		->			+
+----------------------------				 \
+											  \
+
+
 
 **Rules for functional programming**
 
