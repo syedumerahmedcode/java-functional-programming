@@ -45,7 +45,8 @@ These are coming from Stream API.
 The combinator pattern is used in the Main class inside combinatorpattern package.
 
 **Stream()**: In simple words, a stream is a very nice, fancy iterator.
-**filter()**: Like the names suggests, this is only used for filtering. This is a replacement of if statement from imperative programming. 
+**filter()**: Like the names suggests, this is only used for filtering. This is a replacement of if statement from imperative programming. Stream<T> takes Predicate<T>.
+**map()**: Map is a transforming function i.e. it transforms values. Here, number of output == number of input
 
 **Rules for functional programming**
 
