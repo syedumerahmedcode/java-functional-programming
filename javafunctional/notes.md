@@ -50,7 +50,12 @@ The combinator pattern is used in the Main class inside combinatorpattern packag
 
 Both filter and map stay within their swim lanes i.e. They are only concerned with the value at hand and are not considering any values before or after the value in question for their operation.
 
-**reduce()**: reduce cuts across swim lanes. For example, it can be use to do summation of number or in other words, any operation which is concerned with the previous or the next value compared to the value currently under progress. Another example, accumulation of a series of numbers or products of all numbers in a series.
+**reduce()**: reduce on Stream<T> takes two parameters:
+first parameter is of type T. 
+Second parameter is of type BiFunction<R, T, R> to produce a result of R.  
+
+reduce cuts across swim lanes. For example, it can be use to do summation of number or in other words, any operation which is concerned with the previous or the next value compared to the value currently under progress. Another example, accumulation of a series of numbers or products of all numbers in a series. 
+In reduce() the output becomes the input for the next operation i.e. a feedback effect whereas in map() and filter(), there is no feedback effect.
 
 Consider the following diagram:
 
@@ -68,6 +73,10 @@ x4 		  ->			x4'		->			+
 											  \
 
 
+Visualization: multiplication of numbers in a series using reduce.
+	 1	  	   2		 3		   4		  ...
+	 |	  	   | 		 |		   |
+1 -> * -> 1 -> * -> 2 -> * -> 6 -> * -> 24 -> ...
 
 **Rules for functional programming**
 
