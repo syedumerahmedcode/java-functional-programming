@@ -9,6 +9,8 @@ import static java.util.stream.Collectors.*;
 
 public class _Map {
 	
+	private static final String EMPTY_STRING = "  ";
+	
 	public static List<Person> createPeople(){
 		return Arrays.asList(
 				new Person("Bob", Gender.MALE),
@@ -25,12 +27,26 @@ public class _Map {
 		List<Person> people=createPeople();
 		
 		// create a map with name as key, and person as value.
+		System.out.println(EMPTY_STRING);
+		System.out.println("--------------------------------------");
+		System.out.println("create a map with name as key, and person as value.");
 		System.out.println(
 		people.stream()
 			.collect(toMap(
 					person -> person.getName(), 
 					person -> person)
 					));
+		System.out.println("--------------------------------------");
+		System.out.println(EMPTY_STRING);
+		
+		System.out.println(EMPTY_STRING);
+		System.out.println("--------------------------------------");
+		System.out.println("create a map and group by gender.");
+		System.out.println(
+		people.stream()
+			.collect(groupingBy(Person::getGender)));
+		System.out.println("--------------------------------------");
+		System.out.println(EMPTY_STRING);
 		
 	}
 
