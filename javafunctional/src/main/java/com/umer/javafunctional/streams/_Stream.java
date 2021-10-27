@@ -94,6 +94,17 @@ public class _Stream {
 			return "Person {" + "name='" + name + "\'" + ", gender=" + gender + "}";
 
 		}
+
+		public String getName() {
+			return this.name;
+		}
+
+		public Gender getGender() {
+			return this.gender;
+		}
+		
+		
+		
 	}
 
 	enum Gender {
