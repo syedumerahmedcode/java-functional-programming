@@ -78,6 +78,8 @@ Visualization: multiplication of numbers in a series using reduce.
 	 |	  	   | 		 |		   |
 1 -> * -> 1 -> * -> 2 -> * -> 6 -> * -> 24 -> ...
 
+**collect()**: It is a reduce operation as well. Collect() function allows us to avoid shared mutability.
+
 **Rules for functional programming**
 
 Pure functional programming has a set of rules that one must follow:
