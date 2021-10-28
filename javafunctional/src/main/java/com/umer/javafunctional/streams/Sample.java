@@ -63,6 +63,38 @@ public class Sample {
 		System.out.println("The double of even numbers from the list using collect() method is: "+doubleOfEven);
 		System.out.println("--------------------------------------");
 		System.out.println(EMPTY_STRING);
+		
+		
+		List<Integer> numbersRepeating = Arrays.asList(1, 2, 3, 4, 5, 1, 2, 3, 4, 5);
+		System.out.println(EMPTY_STRING);
+		System.out.println("--------------------------------------");
+		System.out.println("sized, unordered, non distinct result");
+		numbersRepeating.stream()
+				.filter(e -> e%2==0)
+				.forEach(System.out::println);
+		System.out.println("--------------------------------------");
+		System.out.println(EMPTY_STRING);
+		
+		System.out.println(EMPTY_STRING);
+		System.out.println("--------------------------------------");
+		System.out.println("sized, ordered, non distinct result");
+		numbersRepeating.stream()
+				.filter(e -> e%2==0)
+				.sorted()
+				.forEach(System.out::println);
+		System.out.println("--------------------------------------");
+		System.out.println(EMPTY_STRING);
+		
+		System.out.println(EMPTY_STRING);
+		System.out.println("--------------------------------------");
+		System.out.println("sized, ordered, distinct result");
+		numbersRepeating.stream()
+				.filter(e -> e%2==0)
+				.sorted()
+				.distinct()
+				.forEach(System.out::println);
+		System.out.println("--------------------------------------");
+		System.out.println(EMPTY_STRING);
 										
 		
 		
