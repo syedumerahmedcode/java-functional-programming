@@ -26,7 +26,7 @@
 
 ## Introduction
 
-- To be defined 
+The aim of this project is to show case the differences between Imperative and declarative approach of coding. Another focus is on different functions available in the Stream API as well as some pros and cons of some of these approaches.
 
 ## Out Of Scope
 
