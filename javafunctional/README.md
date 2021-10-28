@@ -30,7 +30,7 @@ The aim of this project is to show case the differences between Imperative and d
 
 ## Out Of Scope
 
-- To be defined
+Since only basic implementation of various functions from stream API is targeted for this project and the main idea is just to see them in action, unit tests are out of scope.
 
 ## Explanation Declarative Approach
 
