@@ -10,7 +10,7 @@
 
 // Assignment context
      Predicate<String> p = String::isEmpty;
-     Here we specify the predicate as an empty strinng .
+     Here we specify the predicate as an empty string .
      Similar to String p="";
 
 // Method invocation context

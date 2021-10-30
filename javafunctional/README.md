@@ -42,12 +42,14 @@ whereas
 
 __Imperative Programming:__ imperative programming is a programming paradigm that uses statements that changes a program's state. In simple words, Imperative Programming is like your friend listening to Bob Ross telling them how to paint a landscape. While good ole Bob Ross isn’t exactly commanding, he is giving them step by step directions to get the desired result.
 
-  
-
- 
+   
 ## Explanation Functional Interface
 
-- To be defined
+A functional interface is an interface which has exactly one abstract method.
+
+Please note the following from JavaDoc:
+
+Since _default methods_ have an implementation, they are not abstract. If an interface declares an abstract method overriding one of the public methods of java.lang.Object, that also does not count toward the interface's abstract method count since any implementation of the interface will have an implementation from java.lang.Object or elsewhere.  
 
 ## Explanation Callback
 
