@@ -51,6 +51,18 @@ Please note the following from JavaDoc:
 
 Since _default methods_ have an implementation, they are not abstract. If an interface declares an abstract method overriding one of the public methods of java.lang.Object, that also does not count toward the interface's abstract method count since any implementation of the interface will have an implementation from java.lang.Object or elsewhere.  
 
+
+Let us see the six basic function interfaces.
+
+|Interface|Signature|Examples|
+| --- | --- | --- |
+|UnaryOperator<T> T|apply(T t)|String::toLowerCase, Math::tan|
+|BinaryOperator<T> T|apply(T t1, T t2)|BigInteger::add, Math::pow|
+Function<T, R>	R|apply(T t)|Arrays::asList, Integer::toBinaryString|
+Predicate<T, U>	boolean|test(T t, U u)|String::isEmpty, Character::isDigit|
+Supplier<T>	T|get()|LocalDate::now, Instant::now|
+Consumer<T>	void|accept(T t)|System.out::println, Error::printStackTrace|
+
 ## Explanation Callback
 
 - To be defined
