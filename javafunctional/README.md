@@ -34,7 +34,15 @@ Since only basic implementation of various functions from stream API is targeted
 
 ## Explanation Declarative Approach
 
-- To be defined
+Our normal approach before Java 8 was to program via Imperative Programming but lambdas work via Declarative programming. 
+
+__Declarative programming:__ Declarative programming is a programming paradigm that expresses the logic of a computation without describing its control flow. In simple words, Declarative Programming is like asking your friend to draw a landscape. You don’t care how they draw it, that’s up to them.
+
+whereas 
+
+__Imperative Programming:__ imperative programming is a programming paradigm that uses statements that changes a program's state. In simple words, Imperative Programming is like your friend listening to Bob Ross telling them how to paint a landscape. While good ole Bob Ross isn’t exactly commanding, he is giving them step by step directions to get the desired result.
+
+  
 
  
 ## Explanation Functional Interface
@@ -108,7 +116,7 @@ Since only basic implementation of various functions from stream API is targeted
 
 ## References
 
-- To be defined
+- [7](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2): Declarative vs Imperative Programming
 
 
 
