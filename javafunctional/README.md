@@ -110,7 +110,16 @@ Consumer<T>	void|accept(T t)|System.out::println, Error::printStackTrace|
  
 ## Explanation Other Important Points
 
-- To be defined 
+**Rules for functional programming**
+
+Pure functional programming has a set of rules that one must follow:
+
+- No state, meaning that the function must not depend on or change the state of a variable/object outside the boundary of the function.
+- Pure functions, meaning that the function should have everything encapsulated within it and it **should not** depend on something outside the boundary of the function, for example, some form of global state.
+- No side effects outside of the boundary of the function.
+- Higher order functions: A function is considered a higher order functions if one of the following two conditions is true.
+1) The function takes one or more functions as parameters. For example, Callback
+2) The function returns another function as result. For example, combinator pattern.
 
 
 
