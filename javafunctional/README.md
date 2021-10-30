@@ -137,6 +137,7 @@ Consumer<T>	void|accept(T t)|System.out::println, Error::printStackTrace|
 - [5](https://www.youtube.com/watch?v=1OpAgZvYXLQ): Get a Taste of Lambdas and Get Addicted to Streams by Venkat Subramaniam **(Youtube)**
 - [6](https://www.youtube.com/watch?v=t1-YZ6bF-g0): Java 8 STREAMS Tutorial **(YouTube)**
 - [7](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2): Declarative vs Imperative Programming
+- [8](https://mkyong.com/tutorials/java-8-tutorials/): Java 8 Tutorials(From Mkyong)
 
 
 
