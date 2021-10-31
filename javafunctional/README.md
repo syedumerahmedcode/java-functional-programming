@@ -63,6 +63,17 @@ Predicate<T, U>	boolean|test(T t, U u)|String::isEmpty, Character::isDigit|
 Supplier<T>	T|get()|LocalDate::now, Instant::now|
 Consumer<T>	void|accept(T t)|System.out::println, Error::printStackTrace|
 
+**Rules for functional programming**
+
+Pure functional programming has a set of rules that one must follow:
+
+- No state, meaning that the function must not depend on or change the state of a variable/object outside the boundary of the function.
+- Pure functions, meaning that the function should have everything encapsulated within it and it **should not** depend on something outside the boundary of the function, for example, some form of global state.
+- No side effects outside of the boundary of the function.
+- Higher order functions: A function is considered a higher order functions if one of the following two conditions is true.
+1) The function takes one or more functions as parameters. For example, Callback
+2) The function returns another function as result. For example, combinator pattern.
+
 ## Explanation Callback
 
 - To be defined
@@ -110,16 +121,30 @@ Consumer<T>	void|accept(T t)|System.out::println, Error::printStackTrace|
  
 ## Explanation Other Important Points
 
-**Rules for functional programming**
+- Created a simple maven project.
 
-Pure functional programming has a set of rules that one must follow:
+- My project was not compiling, so I added the properties for _1.8 version_ as indicated in this link: https://facingissuesonit.com/2021/05/08/maven-error-source-option-5-is-no-longer-supported-use-6-or-later/
 
-- No state, meaning that the function must not depend on or change the state of a variable/object outside the boundary of the function.
-- Pure functions, meaning that the function should have everything encapsulated within it and it **should not** depend on something outside the boundary of the function, for example, some form of global state.
-- No side effects outside of the boundary of the function.
-- Higher order functions: A function is considered a higher order functions if one of the following two conditions is true.
-1) The function takes one or more functions as parameters. For example, Callback
-2) The function returns another function as result. For example, combinator pattern.
+- A stream allows us to get in an abstract mode where we simple tell it what we want.
+
+- Examples of functional programming:
+
+// Assignment context
+     Predicate<String> p = String::isEmpty;
+     Here we specify the predicate as an empty string .
+     Similar to String p="";
+
+// Method invocation context
+     stream.filter(e -> e.getSize() > 10)...
+     Here e--> is the return type 
+     e.size()>10 is the logic of the method
+     
+
+// Cast context
+     stream.map((ToIntFunction) e -> e.getSize())...
+     Here,  (ToIntFunction) is used to transform the return type to Integer.
+
+
 
 
 

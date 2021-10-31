@@ -1,27 +1,6 @@
 # These are rough notes
 
-- Created a simple maven project.
 
-- My project was not compiling, so I added the properties for _1.8 version_ as indicated in this link: https://facingissuesonit.com/2021/05/08/maven-error-source-option-5-is-no-longer-supported-use-6-or-later/
-
-- A stream allows us to get in an abstract mode where we simple tell it what we want.
-
-- Examples of functional programming:
-
-// Assignment context
-     Predicate<String> p = String::isEmpty;
-     Here we specify the predicate as an empty string .
-     Similar to String p="";
-
-// Method invocation context
-     stream.filter(e -> e.getSize() > 10)...
-     Here e--> is the return type 
-     e.size()>10 is the logic of the method
-     
-
-// Cast context
-     stream.map((ToIntFunction) e -> e.getSize())...
-     Here,  (ToIntFunction) is used to transform the return type to Integer.
      
 Some methods used in the project:
      
@@ -81,25 +60,6 @@ Visualization: multiplication of numbers in a series using reduce.
 
 **collect()**: It is a reduce operation as well. Collect() function allows us to avoid shared mutability.
 
-**Rules for functional programming**
-
-Pure functional programming has a set of rules that one must follow:
-
-- No state, meaning that the function must not depend on or change the state of a variable/object outside the boundary of the function.
-- Pure functions, meaning that the function should have everything encapsulated within it and it **should not** depend on something outside the boundary of the function, for example, some form of global state.
-- No side effects outside of the boundary of the function.
-- Higher order functions: A function is considered a higher order functions if one of the following two conditions is true.
-1) The function takes one or more functions as parameters. For example, Callback
-2) The function returns another function as result. For example, combinator pattern.
-
-# references:
-- [1](https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html#package.description): Java functional package **(JavaDoc)**
-- [2](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html): Java Stream **(JavaDoc)**
-- [3](https://www.youtube.com/watch?v=rPSL1alFIjI): Functional Programming in Java - Full Course **(YouTube)**
-- [4](https://www.youtube.com/watch?v=1xCxoOuDZuU): Java Optionals | Crash Course **(YouTube)**
-- [5](https://www.youtube.com/watch?v=1OpAgZvYXLQ): Get a Taste of Lambdas and Get Addicted to Streams by Venkat Subramaniam **(Youtube)**
-Time stamp: 1:46:00
-- [6](https://www.youtube.com/watch?v=t1-YZ6bF-g0): Java 8 STREAMS Tutorial **(YouTube)**
 
 
 
