@@ -76,7 +76,7 @@ Pure functional programming has a set of rules that one must follow:
 
 ## Explanation Callback
 
-- To be defined
+A callback is some code that you pass to a given method, so that it can be called at a later time.
 
 ## Explanation Consumer
 
@@ -172,6 +172,7 @@ Pure functional programming has a set of rules that one must follow:
 - [6](https://www.youtube.com/watch?v=t1-YZ6bF-g0): Java 8 STREAMS Tutorial **(YouTube)**
 - [7](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2): Declarative vs Imperative Programming
 - [8](https://mkyong.com/tutorials/java-8-tutorials/): Java 8 Tutorials(From Mkyong)
+- [9](https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java): 
 
 
 
