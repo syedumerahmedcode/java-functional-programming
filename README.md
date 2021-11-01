@@ -193,6 +193,7 @@ Similarly, a BiFunction _incrementByOneAndMultiplyBiFunction_ is also created wh
 - [7](https://codeburst.io/declarative-vs-imperative-programming-a8a7c93d9ad2): Declarative vs Imperative Programming
 - [8](https://mkyong.com/tutorials/java-8-tutorials/): Java 8 Tutorials(From Mkyong)
 - [9](https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java): What is a callback function?
+- [10](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html): Optional **(JavaDoc)**
 
 
 

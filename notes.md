@@ -4,8 +4,6 @@
      
 Some methods used in the project:
      
-- **Function<T,R>**: Represents a function that accepts one argument and produces a result.
-- **BiFunction<T,U,R>**: Represents a function that accepts two arguments and produces a result.
 
 
 - **Predicate<T>**: Represents a predicate(boolean-valued function) of one argument.
