@@ -202,7 +202,7 @@ is created which nothing as input and delivers a String as output. In the main m
 
 ## Explanation Lambdas
 
-- To be defined
+provides a clear and concise way to represent one method interface using an expression. In simple words, the Lambda expression is used to provide the implementation of an interface which has functional interface. 
 
 ## Explanation Map
 
