@@ -88,7 +88,7 @@ This is implemented is Consumer class in the project. In the consumer class, a c
 
 Similar to Consumer, one can also create BiConsumer which takes two parameters as input(instead of one) but like consumer does not return any output.
 
-**Reference:** The source code for the Consumer is present in [Callback.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Consumer.java) class.
+**Reference:** The source code for the Consumer is present in [_Consumer.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Consumer.java) class.
 
 - Add a picture linking imperative and declarative approach together.
 
