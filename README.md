@@ -212,7 +212,9 @@ provides a clear and concise way to represent one method interface using an expr
 
 ## Explanation Stream
 
-A sequence of elements supporting sequential and parallel aggregate operations. To perform a computation, stream operations are composed into a __stream pipeline__. A stream pipeline consists of a _source_ (which might be an array, a collection, a generator function, an I/O channel, etc), zero or more intermediate operations (which transform a stream into another stream, such as _filter(Predicate)_), and a terminal operation (which produces a result or side-effect, such as _count()_ or _forEach(Consumer)_). 
+**Stream()**: A sequence of elements supporting sequential and parallel aggregate operations. n simple words, a stream is a very nice, fancy iterator. Characteristics of a stream: sized, ordered/unordered, distinct, sorted.
+
+To perform a computation, stream operations are composed into a __stream pipeline__. A stream pipeline consists of a _source_ (which might be an array, a collection, a generator function, an I/O channel, etc), zero or more intermediate operations (which transform a stream into another stream, such as _filter(Predicate)_), and a terminal operation (which produces a result or side-effect, such as _count()_ or _forEach(Consumer)_). 
 
 Streams are __lazy__; computation on the source data is __only performed when the terminal operation is initiated__, and source elements are consumed only as needed. 
 
@@ -220,7 +222,24 @@ Streams are __lazy__; computation on the source data is __only performed when th
 
 ## Explanation Parallel Stream
 
-- To be defined
+In simple words, when a parallel stream is executed, multiple threads are created that work on the stream pipeline. 
+
+For example, 
+
+```java
+
+System.out.println("The end result with declarative approach WITH PARALLEL STREAM plus call of method is: "+
+				numbers.parallelStream()
+				.filter(e -> e%2==0)
+				.mapToInt(e -> Sample.compute(e))
+				.sum())
+		);
+		
+```
+
+Due to the nature of parallel stream, computations may not behave in intended way due to multiple threads being present. Hence, use it with _caution._
+
+**Reference:** The source code for the Parallel Stream is present in [Sample.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/streams/Sample.java) class.
 
 ## Explanation Combinator Pattern
 
