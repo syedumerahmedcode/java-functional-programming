@@ -112,6 +112,16 @@ A container object which may or may not contain a non-null value. It contains se
 
 Additional methods that depend on the presence or absence of a contained value are provided, such as _orElse()_ (return a default value if value not present) and _ifPresent()_ (execute a block of code if the value is present).
 
+Optional is implemented in the _Optional_ class in the project. In the main method, the code 
+
+```java
+
+final Optional<Object> empty = Optional.empty();
+
+```
+
+means that Optional object is empty. Due to this, __isPresent()__ returns false whereas __isEmpty()__ returns true.
+
 - Add a picture linking imperative and declarative approach together.
 
 ## Explanation Predicate
