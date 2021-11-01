@@ -82,17 +82,23 @@ A callback is some code that you pass to a given method, so that it can be calle
 
 ## Explanation Consumer
 
-- **Consumer<T>**: Represents an operation that accepts a single input argument and returns no result. It is similar to a void function when compared to imperative implementation.
+**Consumer<T>**: Represents an operation that accepts a single input argument and returns no result. It is similar to a void function when compared to imperative implementation.
 
-This is implemented is Consumer class in the project. In the consumer class, a consumer object is created which takes Customer as input and prints the information on the command line. In the main method, the consumer is called via __accept() function__.
+**BiConsumer<T,U>**: Represents an operation that accepts two input arguments and returns no result.
 
-Similar to Consumer, one can also create BiConsumer which takes two parameters as input(instead of one) but like consumer does not return any output.
+Consumer is implemented in _Consumer_ class in the project. In the consumer class, a consumer object is created which takes Customer as input and prints the information on the command line. In the main method, the consumer is called via __accept() function__.
 
 **Reference:** The source code for the Consumer is present in [_Consumer.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Consumer.java) class.
 
 - Add a picture linking imperative and declarative approach together.
 
 ## Explanation Function
+
+**Function<T,R>**: Represents a function that accepts one argument and produces a result.
+
+**BiFunction<T,U,R>**: Represents a function that accepts two arguments and produces a result.
+
+Function is implemented in the _Function_ class in the project.
 
 - Add a picture linking imperative and declarative approach together.
 

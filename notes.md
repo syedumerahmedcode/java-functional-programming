@@ -6,8 +6,8 @@ Some methods used in the project:
      
 - **Function<T,R>**: Represents a function that accepts one argument and produces a result.
 - **BiFunction<T,U,R>**: Represents a function that accepts two arguments and produces a result.
-- **Consumer<T>**: Represents an operation that accepts a single input argument and returns no result. It is similar to a void function when compared to imperative implementation.
-- **BiConsumer<T,U>**: Represents an operation that accepts two input arguments and returns no result.
+
+
 - **Predicate<T>**: Represents a predicate(boolean-valued function) of one argument.
 - **BiPredicate<T,U>**: Represents a predicate (boolean-valued function) of two arguments.
 - **Supplier<T>**: Represents a supplier of results.
