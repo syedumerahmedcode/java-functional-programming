@@ -243,7 +243,11 @@ Due to the nature of parallel stream, computations may not behave in intended wa
 
 ## Explanation Combinator Pattern
 
-- To be defined
+Combinator pattern is a pattern in which complex structures are built by defining a small set of very simple 'primitives', and a set of 'combinators' for combining them into more complicated structures.
+
+This pattern is very useful for doing validation as it helps increase as well as decrease the validation on an object within the business logic. It is implemented inside _combinatorpattern_ package within _CustomerRegistrationValidator_ interface which extends Function<Customer, ValidationResult> where _Customer_ is the business object on which validation is applied whereas _ValidationResult_ is an enum which indicates the possible outcomes of the validation.
+
+**Reference:** The source code for the Combinator pattern is present in [CustomerRegistrationValidatorSet.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/combinatorpattern/CustomerRegistrationValidatorSet.java) class and it is used in [Main.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/combinatorpattern/Main.java) class.
 
  
 ## Explanation Other Important Points
@@ -301,6 +305,7 @@ Due to the nature of parallel stream, computations may not behave in intended wa
 - [8](https://mkyong.com/tutorials/java-8-tutorials/): Java 8 Tutorials(From Mkyong)
 - [9](https://stackoverflow.com/questions/8736378/what-is-a-callback-in-java): What is a callback function?
 - [10](https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html): Optional **(JavaDoc)**
+- [11](https://wiki.haskell.org/Combinator_pattern): Combinator pattern **(Haskell Wiki)**
 
 
 
