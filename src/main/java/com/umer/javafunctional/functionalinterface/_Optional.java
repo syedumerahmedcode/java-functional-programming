@@ -26,7 +26,7 @@ public class _Optional {
 		System.out.println(hello.isEmpty());
 
 		System.out.println("---------------------------------------------------------------");
-		System.out.println("Use case of optional.orElse");
+		System.out.println("Use case of Optional.ofNullable and optional.orElse");
 		System.out.println("---------------------------------------------------------------");
 
 		final Optional<String> hello2 = Optional.ofNullable(null);

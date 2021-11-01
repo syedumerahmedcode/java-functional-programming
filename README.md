@@ -122,6 +122,29 @@ final Optional<Object> empty = Optional.empty();
 
 means that Optional object is empty. Due to this, __isPresent()__ returns false whereas __isEmpty()__ returns true.
 
+Similarly, the code 
+
+```java
+
+final Optional<String> hello = Optional.of("hello");
+
+```
+
+
+creates an optional object of hello. Due to this, __isPresent()__ returns true whereas __isEmpty()__ returns false.
+
+The code
+
+```java
+
+final Optional<String> hello2 = Optional.ofNullable(null);
+
+```
+
+delivers a null value. Hence, when calling _hello2.orElse("World");_, sout prints 'World' to command line.
+
+
+
 - Add a picture linking imperative and declarative approach together.
 
 ## Explanation Predicate
