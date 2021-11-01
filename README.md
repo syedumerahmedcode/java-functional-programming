@@ -206,7 +206,9 @@ provides a clear and concise way to represent one method interface using an expr
 
 ## Explanation Map
 
-- To be defined
+**map()**: Used for the transformation of an object.  It returns a stream consisting of the results of applying the given function to the elements of this stream. What is returned depends on how the function is implemented inside map method. In simple words, a __map() function__ called within __collect()__ is used to transform the data withikn the stream. 
+
+**Reference:** The source code for the Map is present in [_Map.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/streams/_Map.java) class.
 
 ## Explanation Stream
 
