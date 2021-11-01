@@ -331,7 +331,7 @@ Visualization: multiplication of numbers in a series using reduce.
 
 ## Prerequisities
 
-- To be defined 
+None
 
 ## Commands
 
