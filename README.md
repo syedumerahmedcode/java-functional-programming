@@ -328,8 +328,6 @@ Visualization: multiplication of numbers in a series using reduce.
 ## Technologies Used
 
 - Java 11
-- To be defined
-
 
 ## Prerequisities
 
