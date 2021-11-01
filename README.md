@@ -160,6 +160,24 @@ System.out.println() prints 'World' to command line.
 
 ## Explanation Predicate
 
+**Predicate<T>**: Represents a predicate(boolean-valued function) of one argument. Basically, it evaluates a condition to check if it results in true or false. Similarly, 
+
+**BiPredicate<T,U>**: Represents a predicate (boolean-valued function) of two arguments.
+
+Predicate is implemented in _Predicate_ class in the project. In the predicate class, a predicate object
+
+```java
+
+static Predicate<String> isPhoneNumberValidPredicate = phoneNumber -> 
+				phoneNumber.startsWith("07") && 
+				phoneNumber.length() == 11;
+
+```
+
+ is created which takes phone number as input and checks if the conditions are fulfilled. In the main method, the predicate is called via __test() function__. Please note that two or more predicates can be combined using __.and()__ or __.or() functions__. 
+
+**Reference:** The source code for the Predicate is present in [_Predicate.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Predicate.java) class.
+
 - Add a picture linking imperative and declarative approach together.
 
 ## Explanation Supplier

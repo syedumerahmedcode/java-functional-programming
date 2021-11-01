@@ -6,8 +6,7 @@ Some methods used in the project:
      
 
 
-- **Predicate<T>**: Represents a predicate(boolean-valued function) of one argument.
-- **BiPredicate<T,U>**: Represents a predicate (boolean-valued function) of two arguments.
+
 - **Supplier<T>**: Represents a supplier of results.
 
 These are coming from Stream API.
