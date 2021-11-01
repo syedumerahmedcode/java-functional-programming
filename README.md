@@ -182,6 +182,22 @@ static Predicate<String> isPhoneNumberValidPredicate = phoneNumber ->
 
 ## Explanation Supplier
 
+**Supplier<T>**: Represents a supplier of results. It takes no input and gives an object/list of objects as output. 
+
+
+Supplier is implemented in _Supplier_ class in the project. In the supplier class, a supplier object
+
+```java
+
+static Supplier<String> getDBConnectionUrlsSupplier = () 
+			-> DUMMY_DATABASE_CONNECTION_URL;
+
+```
+
+is created which nothing as input and delivers a String as output. In the main method, the supplier is called via __get() function__.
+
+**Reference:** The source code for the Supplier is present in [_Supplier.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Supplier.java) class.
+
 - Add a picture linking imperative and declarative approach together.
 
 ## Explanation Lambdas

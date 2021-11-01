@@ -5,10 +5,6 @@
 Some methods used in the project:
      
 
-
-
-- **Supplier<T>**: Represents a supplier of results.
-
 These are coming from Stream API.
 - **map()**: Used for the transformation of an object.  It returns a stream consisting of the results of applying the given function to the elements of this stream. What is returned depends on how the function is implemented inside map method.
 - **collect()**: Performs some kind of reduction operation on the elements of the stream. In our case, we are using Collector API from Stream.  
