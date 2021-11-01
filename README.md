@@ -98,7 +98,11 @@ Consumer is implemented in _Consumer_ class in the project. In the consumer clas
 
 **BiFunction<T,U,R>**: Represents a function that accepts two arguments and produces a result.
 
-Function is implemented in the _Function_ class in the project.
+Function is implemented in the _Function_ class in the project. In the function class, a function object _multiplyByTen_ is created which takes integer as input and returns a Integer as output. In the main method, the function is utilized by calling __apply() function.__
+
+Similarly, a BiFunction _incrementByOneAndMultiplyBiFunction_ is also created which takes two integers as input and returns an output.In the main method, __andThen() along with apply() function__.
+
+**Reference:** The source code for the Function is present in [_Function.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Function.java) class.
 
 - Add a picture linking imperative and declarative approach together.
 
