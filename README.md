@@ -108,6 +108,10 @@ Similarly, a BiFunction _incrementByOneAndMultiplyBiFunction_ is also created wh
 
 ## Explanation Optional
 
+A container object which may or may not contain a non-null value. It contains several methods such as _isPresent()_ and _get()_.  If a value is present, _isPresent()_ will return true and _get()_ will return the value. 
+
+Additional methods that depend on the presence or absence of a contained value are provided, such as _orElse()_ (return a default value if value not present) and _ifPresent()_ (execute a block of code if the value is present).
+
 - Add a picture linking imperative and declarative approach together.
 
 ## Explanation Predicate
