@@ -141,8 +141,19 @@ final Optional<String> hello2 = Optional.ofNullable(null);
 
 ```
 
-delivers a null value. Hence, when calling _hello2.orElse("World");_, sout prints 'World' to command line.
+delivers a null value. Hence, when calling 
 
+```java
+
+hello2.orElse("World");
+
+```
+
+System.out.println() prints 'World' to command line.
+
+**ifPresentOrElse()**: Using this method, one can define the logic if the value is present or respond accordingly if it is _null_. Logically speaking, it works like a ternary operator. 
+
+**Reference:** The source code for the Optional is present in [_Optional.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Optional.java) class.
 
 
 - Add a picture linking imperative and declarative approach together.
