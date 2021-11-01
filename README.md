@@ -335,7 +335,7 @@ None
 
 ## Commands
 
-- To be defined
+Since there are multiple classes containing main() method, each of which is targeted at highlighting one specific feature of functional programming in Java, one needs to navigate to the specific main() method and run it in an IDE. 
 
 ## Contribution
 
