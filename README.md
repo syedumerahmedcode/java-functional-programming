@@ -78,6 +78,8 @@ Pure functional programming has a set of rules that one must follow:
 
 A callback is some code that you pass to a given method, so that it can be called at a later time.
 
+**Reference:** The source code for the Callback is present in [Callback.java](https://github.com/syedumerahmedcode/prefix/blob/master/trie/src/main/java/com/umer/javafunctional/callback/Callback.java) class.
+
 ## Explanation Consumer
 
 - To be defined
