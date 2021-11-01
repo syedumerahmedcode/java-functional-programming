@@ -212,7 +212,11 @@ provides a clear and concise way to represent one method interface using an expr
 
 ## Explanation Stream
 
-- To be defined
+A sequence of elements supporting sequential and parallel aggregate operations. To perform a computation, stream operations are composed into a __stream pipeline__. A stream pipeline consists of a _source_ (which might be an array, a collection, a generator function, an I/O channel, etc), zero or more intermediate operations (which transform a stream into another stream, such as _filter(Predicate)_), and a terminal operation (which produces a result or side-effect, such as _count()_ or _forEach(Consumer)_). 
+
+Streams are __lazy__; computation on the source data is __only performed when the terminal operation is initiated__, and source elements are consumed only as needed. 
+
+**Reference:** The source code for the Stream is present in [_Stream.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/streams/_Stream.java) class.
 
 ## Explanation Parallel Stream
 
