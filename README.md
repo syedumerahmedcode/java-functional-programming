@@ -20,6 +20,7 @@
 - [Technologies Used](#technologies-used)
 - [Prerequisities](#prerequisities)
 - [Commands](#commands)
+- [Contribution](#contribution)
 - [References](#references)
 - [Contact Information](#contact-information)
 
@@ -337,6 +338,10 @@ Visualization: multiplication of numbers in a series using reduce.
 ## Commands
 
 - To be defined
+
+## Contribution
+
+Feature requests, issues, pull requests and questions are welcome.
 
 ## References
 
