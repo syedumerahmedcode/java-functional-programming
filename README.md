@@ -302,16 +302,18 @@ In reduce() the output becomes the input for the next operation i.e. a feedback 
 
 Consider the following diagram:
 
+```java
+
 		filter			map			reduce
 									0.0
 									 \
 x1		  |							  \
 ----------------------------		   \
-x2		  ->			x2'		->		+
+x2		  ->			x2'			->		+
 ----------------------------			 \
 x3		  |								  \
 ----------------------------			   \
-x4 		  ->			x4'		->			+
+x4 		  ->			x4'				->		+
 ----------------------------				 \
 											  \
 
@@ -320,6 +322,8 @@ Visualization: multiplication of numbers in a series using reduce.
 	 1	  	   2		 3		   4		  ...
 	 |	  	   | 		 |		   |
 1 -> * -> 1 -> * -> 2 -> * -> 6 -> * -> 24 -> ...
+
+```
 
 **collect()**: It is a reduce operation as well. Collect() function allows us to avoid shared mutability.
 
