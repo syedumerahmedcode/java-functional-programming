@@ -82,23 +82,23 @@ A callback is some code that you pass to a given method, so that it can be calle
 
 ## Explanation Consumer
 
-- To be defined
+- Add a picture linking imperative and declarative approach together.
 
 ## Explanation Function
 
-- To be defined
+- Add a picture linking imperative and declarative approach together.
 
 ## Explanation Optional
 
-- To be defined
+- Add a picture linking imperative and declarative approach together.
 
 ## Explanation Predicate
 
-- To be defined
+- Add a picture linking imperative and declarative approach together.
 
 ## Explanation Supplier
 
-- To be defined
+- Add a picture linking imperative and declarative approach together.
 
 ## Explanation Lambdas
 
