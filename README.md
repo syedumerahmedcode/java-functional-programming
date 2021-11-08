@@ -91,7 +91,7 @@ Consumer is implemented in _Consumer_ class in the project. In the consumer clas
 
 **Reference:** The source code for the Consumer is present in [_Consumer.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Consumer.java) class.
 
-- Add a picture linking imperative and declarative approach together.
+![ConsumerExplanationOnWhiteBoard](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/resources/ConsumerExplanation.jpeg)
 
 ## Explanation Function
 
