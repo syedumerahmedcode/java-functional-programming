@@ -105,7 +105,7 @@ Similarly, a BiFunction _incrementByOneAndMultiplyBiFunction_ is also created wh
 
 **Reference:** The source code for the Function is present in [_Function.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Function.java) class.
 
-- Add a picture linking imperative and declarative approach together.
+![FunctionExplanationOnWhiteBoard](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/resources/FunctionExplanation.jpeg)
 
 ## Explanation Optional
 
