@@ -198,7 +198,7 @@ is created which nothing as input and delivers a String as output. In the main m
 
 **Reference:** The source code for the Supplier is present in [_Supplier.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Supplier.java) class.
 
-- Add a picture linking imperative and declarative approach together.
+![SupplierExplanationOnWhiteBoard](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/resources/SupplierExplanation.jpeg)
 
 ## Explanation Lambdas
 
