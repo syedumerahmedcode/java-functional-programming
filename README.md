@@ -157,7 +157,6 @@ System.out.println() prints 'World' to command line.
 **Reference:** The source code for the Optional is present in [_Optional.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Optional.java) class.
 
 
-- Add a picture linking imperative and declarative approach together.
 
 ## Explanation Predicate
 
