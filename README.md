@@ -178,7 +178,7 @@ static Predicate<String> isPhoneNumberValidPredicate = phoneNumber ->
 
 **Reference:** The source code for the Predicate is present in [_Predicate.java](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/java/com/umer/javafunctional/functionalinterface/_Predicate.java) class.
 
-- Add a picture linking imperative and declarative approach together.
+![PredicateExplanationOnWhiteBoard](https://github.com/syedumerahmedcode/java-functional-programming/blob/master/src/main/resources/PredicateExplanation.jpeg)
 
 ## Explanation Supplier
 
